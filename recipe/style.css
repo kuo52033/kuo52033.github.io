@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  background-color: #aff6cf;
+  background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
+  background-position: center center;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  width: 400px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  /* overflow: hidden; */
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  padding: 10px;
+}
+
+.header-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  width: 70%;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  border-radius: 14px;
+  color: gray;
+}
+
+.header-search input {
+  padding: 6px;
+  border: none;
+  border-radius: 14px;
+  outline: none;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.header-search i {
+  margin: 0 4px;
+}
+
+.fav-container {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(233, 199, 255);
+}
+
+.fav-container h3 {
+  font-weight: bold;
+}
+
+.meals-ul {
+  display: flex;
+  overflow: auto;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.meals-ul li {
+  position: relative;
+  display: flex;
+  min-width: 90px;
+  max-width: 90px;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 0 10px;
+}
+
+.meals-ul .remove {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.meals-ul li:hover .remove {
+  opacity: 1;
+}
+
+.meals-ul img {
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.meals-ul h3 {
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.meals-container {
+  padding: 1rem;
+  position: relative;
+}
+
+.all-meals {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.meal {
+  margin: 1.5rem;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+  overflow: hidden;
+  min-width: 340px;
+  max-width: 340px;
+}
+
+.meal-header img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.random {
+  position: absolute;
+  top: 0;
+  right: -8.95rem;
+  background-color: white;
+  padding: 0.25rem 1rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.meal-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.meal-body h4 {
+  font-size: 1.5rem;
+}
+
+.meal-body .fa-btn {
+  border: none;
+  background-color: transparent;
+  color: rgb(200, 200, 200);
+  cursor: pointer;
+}
+
+.meal-body .fa-btn.active {
+  color: purple;
+}
+
+.meal-info-container {
+  display: flex;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.meal-info-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.meal-info {
+  position: relative;
+  background-color: #fff;
+  max-width: 800px;
+  max-height: 100vh;
+  overflow: auto;
+  padding: 1.2rem 2rem;
+  border-radius: 6px;
+}
+
+.meal-info img {
+  width: 70%;
+  margin: 1.5rem 0;
+}
+
+.meal-info p {
+  font-weight: bold;
+}
+
+.meal-info .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.meal-info ul {
+  font-weight: bold;
+  margin-top: 1rem;
+}

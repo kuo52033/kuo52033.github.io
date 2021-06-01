@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-search">
+          <i class="fas fa-search"></i>
+          <input type="search" id="search-term" />
+        </div>
+      </header>
+      <div class="fav-container">
+        <h3>Favorite Meals</h3>
+        <ul class="meals-ul" id="meals-ul"></ul>
+      </div>
+      <div class="meals-container">
+        <h3 class="random" id="random">random recipe</h3>
+        <div class="all-meals" id="meals"></div>
+      </div>
+    </div>
+
+    <div class="meal-info-container hidden" id="meal-info-container">
+      <div class="meal-info" id="meal-info"></div>
+    </div>
+  </body>
+</html>
